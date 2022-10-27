@@ -1,0 +1,32 @@
+%button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: white;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.kok-btn {
+    @extend %button;
+    color: red;
+    box-shadow: 0 4 10px red;
+    border-color: red;
+
+    &:hover {
+        background-color: white;
+        color: red;
+    }
+}
